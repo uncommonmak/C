@@ -1,26 +1,30 @@
 #include <stdio.h>
 #include <stdlib.h>
-float funPrintInt(float r);
-void funCalculateArea(void);
+
+float fun_Print_Int(float r);
+void fun_Calculate_Area(void);
+
 int main()
 {
-    funCalculateArea();
+    fun_Calculate_Area();
     return 0;
 }
 
-void funCalculateArea(void)
+void fun_Calculate_Area(void)
 {
-    float k;
-    float fArea;
-    printf("enter k ");
-    scanf("%f",&k);
-    fArea=funPrintInt(k);
-    printf("area = %f",fArea);
+    float k, fArea;
+    
+    printf("Enter k ");
+    scanf("%f", &k);
+    
+    fArea = fun_Print_Int(k);
+    
+    printf("Area = %f", fArea);
 }
 
-float funPrintInt(float r)
+float fun_Print_Int(float r)
 {
     float a;
-    a=3.14*r*r;
+    a = 3.14 * r * r;
     return a;
 }
